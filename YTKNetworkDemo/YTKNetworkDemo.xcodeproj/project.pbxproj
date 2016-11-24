@@ -217,6 +217,7 @@
 				BF007FD119FF972C00816462 /* Resources */,
 				446BEB38D2E9356D5931A463 /* [CP] Embed Pods Frameworks */,
 				DE3E65FF40BD9A908E26EF96 /* [CP] Copy Pods Resources */,
+				1C4C63B25FDDE0555CF8AD97 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -237,6 +238,7 @@
 				BF007FEA19FF972C00816462 /* Resources */,
 				35388473680756633E871C75 /* [CP] Embed Pods Frameworks */,
 				9D8FC356690477282DCB85ED /* [CP] Copy Pods Resources */,
+				8D10929BF8DBFB1F48708915 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -259,6 +261,7 @@
 				TargetAttributes = {
 					BF007FD219FF972C00816462 = {
 						CreatedOnToolsVersion = 6.1;
+						ProvisioningStyle = Manual;
 					};
 					BF007FEB19FF972C00816462 = {
 						CreatedOnToolsVersion = 6.1;
@@ -306,6 +309,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1C4C63B25FDDE0555CF8AD97 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YTKNetworkDemo/Pods-YTKNetworkDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		35388473680756633E871C75 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -364,6 +382,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8D10929BF8DBFB1F48708915 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YTKNetworkDemoTests/Pods-YTKNetworkDemoTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9D8FC356690477282DCB85ED /* [CP] Copy Pods Resources */ = {
@@ -546,6 +579,7 @@
 			baseConfigurationReference = FEEC7AA40163426AAD453013 /* Pods-YTKNetworkDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = YTKNetworkDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -560,6 +594,7 @@
 			baseConfigurationReference = D30149728A908A3BBCCE924A /* Pods-YTKNetworkDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = YTKNetworkDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
