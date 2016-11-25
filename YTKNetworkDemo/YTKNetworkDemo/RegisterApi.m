@@ -45,6 +45,10 @@
     };
 }
 
+//- (NSDictionary *)requestHeaderFieldValueDictionary {
+//    return @{@"Content-Type":@"application/json;charset=UTF-8"};
+//}
+
 - (NSString *)userId {
     return [[[self responseJSONObject] objectForKey:@"userId"] stringValue];
 }

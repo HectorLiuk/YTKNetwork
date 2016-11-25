@@ -13,12 +13,14 @@
 #import "GetUserInfoApi.h"
 #import "RegisterApi.h"
 #import "YTKBaseRequest+AnimatingAccessory.h"
+#import "LearnApi.h"
 
 @interface ViewController ()<YTKChainRequestDelegate>
 
 @end
 
 @implementation ViewController
+
 
 /// Send batch request
 - (void)sendBatchRequest {
@@ -84,8 +86,19 @@
     }];
 }
 
+- (void)learnRequest{
+    LearnApi *api = [[LearnApi alloc] init];
+    [api startWithCompletionBlockWithSuccess:^(__kindof YTKBaseRequest * _Nonnull request) {
+        
+    } failure:^(__kindof YTKBaseRequest * _Nonnull request) {
+        
+    }];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self learnRequest];
 }
 
 - (void)didReceiveMemoryWarning {
